@@ -1,0 +1,108 @@
+.body {
+    background-color: #586e26;
+    display: grid;
+    grid-auto-rows: minmax(50px, 300px);
+    gap: 1em;
+    grid-template-rows: [row1-start] 30% [row1-end] 120% [third-line] auto [last-line];
+    font-family: "Arial";
+}
+
+.body > div{
+    padding: 2px;
+    border: 3px solid rgb(99,83,33)
+}
+
+.body > div:hover{
+    border: 2px solid black;
+    background-color: #798f45;
+}
+
+.S1{
+    grid-row: 1/2;
+    grid-column: 1/2;
+
+}
+
+.S2{
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+.S3{
+    /*display: grid;*/
+    grid-template-rows: [row1-start] 5% [row1-end] 20% [third-line] 1fr [last-line];
+    grid-row: 2/3;
+    grid-column: 1/3;
+
+}
+
+.R{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    flex-flow: row wrap;
+}
+
+.AD{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    flex-flow: row wrap;
+}
+
+.AA{
+    grid-row: 2/3;
+    grid-column: 3/4;
+    flex-flow: row wrap;
+}
+
+.Estruct{
+    grid-row: 3/3;
+    grid-column: 1/2;
+    flex-flow: row wrap;
+
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-row: 3/4;
+    grid-column: 1/4;
+    border: 1px solid black;
+}
+
+.S4{
+    display: flex;
+    justify-content: center;
+    grid-row: 3/4;
+    grid-column: 1/3;
+    height: 40px;
+}
+
+.action_box {
+    display: flex;
+    width: 100%;
+    min-height: 10%;
+    max-height: 100%;
+    flex-flow: row wrap;
+}
+
+.instructionsBox {
+    display: flex;
+    height: 90%;
+    width: 100%;
+}
+
+.actionIntruction {
+    display: flex;
+    padding: 1px;
+    height: 10%;
+}
+
+.deleteActionButton {
+    margin-left: 1rem;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}

@@ -1,0 +1,352 @@
+.ContainerPrincipal{
+    display: grid;
+    grid-template-columns: 25% 1fr 25%;
+    gap: 1em;
+    grid-auto-rows: minmax(50px, 460px);
+    align-items:  stretch;
+    /* background-image: url("a.png"); */
+    background-color: rgb(99, 83, 32);
+    background-repeat: repeat;
+    margin: 2px;
+}
+
+.ContainerPrincipal > div {
+    /*background-color: #778c43;*/
+    padding: 1em;
+    border: 3px solid rgb(99, 83, 32);
+    margin: 5px;
+}
+
+.ContainerPrincipal > div:hover{
+    border: 2px solid black;
+    
+}
+
+.Seccion {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    grid-template-columns: 25%;
+    display: flex;
+    flex-direction: column;
+    font-family: "Arial";
+    background:rgb(26 106 77 / 87%);
+}
+
+.user{
+    font-family: sans-serif; 
+    font-size: 100%; 
+    font-weight: 10000; 
+    color: #ffffff; 
+    background:#ee04;
+    padding: 4%;
+    margin: 0 0 1%;
+    overflow: hidden;
+    border-radius: 3% 0px 3% 0px;
+    -moz-border-radius: 35px 0px 35px 0px;
+    -webkit-border-radius: 35px 0px 35px 0px;
+    border: 2px solid #cabd58;
+    font-family: "Arial";
+}
+
+.stats{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-content: center ;
+    font-family: sans-serif; 
+    font-size: 100%; 
+    color: #ffffff; 
+    background:#ee04;
+    padding: 4%;
+    margin: 0 0 1%;
+    overflow: hidden;
+    border-radius: 3% 0px 3% 0px;
+    -moz-border-radius: 35px 0px 35px 0px;
+    -webkit-border-radius: 35px 0px 35px 0px;
+    border: 2px solid #433813;
+    font-family: "Arial";
+}
+
+.health {
+    width: 90%;
+    height: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: sans-serif; 
+    color: #ffffff; 
+    background:#ee04;
+    padding: 4%;
+    margin: 0 0 1px;
+    text-align: start;
+    overflow: hidden;
+    border: 2px solid #5d6326;
+    font-family: "Arial";
+}
+
+.radar {
+    width: 90%;
+    height: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: sans-serif; 
+    color: #ffffff; 
+    background:#ee04;
+    padding: 4%;
+    margin: 0 0 1px;
+    text-align: start;
+    overflow: hidden;
+    border: 2px solid #5d6326;
+    font-family: "Arial";
+}    
+
+.minas{
+    width: 90%;
+    height: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: sans-serif; 
+    color: #ffffff; 
+    background:#ee04;
+    padding: 4%;
+    margin: 0 0 1px;
+    text-align: start;
+    overflow: hidden;
+    border: 2px solid #5d6326;
+    font-family: "Arial"; 
+}
+
+.mc{
+    width: 90%;
+    height: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: sans-serif; 
+    color: #ffffff; 
+    background:#ee04;
+    padding: 4%;
+    margin: 0 0 1px;
+    text-align: start;
+    overflow: hidden;
+    border: 2px solid #5d6326;
+    font-family: "Arial";  
+}
+
+.mt{
+    width: 90%;
+    height: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: sans-serif; 
+    color: #ffffff; 
+    background:#ee04;
+    padding: 4%;
+    margin: 0 0 1px;
+    text-align: start;
+    overflow: hidden;
+    border: 2px solid #5d6326;
+    font-family: "Arial";   
+}
+
+.prox{
+    border: 2px solid black;
+}
+
+.design{
+    border: 2px solid black;
+    font-family: "Arial";
+}
+
+.Seccion2{
+    grid-row: 1/3;
+    grid-column: 2/3;
+    grid-template-columns: 50%;
+    font-family: "Arial";
+}
+
+
+
+.Seccion3{
+    grid-row: 1/2;
+    grid-column: 3/4;
+    grid-template-columns: 25%;
+    color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    font-family: "Arial";
+    background:rgb(98 21 8 / 80%);
+}
+.Seccion4{
+    grid-row: 2/2;
+    grid-column: 1/2;
+    grid-template-columns: 25%;
+    color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    font-family: "Arial";
+    background:rgb(122 105 8 / 85%);
+}
+.Seccion5{
+    grid-row: 2/3;
+    grid-column: 3/4;
+    grid-template-columns: 25%;
+    color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    font-family: "Arial";
+    background:rgb(33 55 116 / 72%);
+}
+
+.Seccion2 > div {
+    background-color: #586e26;
+    /*padding: 1em;*/
+    border: 3px solid rgb(99, 83, 32);
+    /*margin: 5px;*/
+    font-family: "Arial";
+}
+
+.Seccion2 > div:hover{
+    border: 2px solid black;
+    font-family: "Arial";
+    
+}
+
+.round{
+    height: 3rem;
+    width: 20rem;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid rgb(56, 60, 18);
+    font-family: "Arial";
+    font-style: oblique;
+    font-size: xx-large;
+    justify-content:left;
+    color: #f1f1f1;    
+    background-color: #203500;
+    border-radius: 3% 0px 3% 0px;
+    -moz-border-radius: 35px 0px 35px 0px;
+    -webkit-border-radius:  0px 35px 0px 35px;
+}
+
+.Player_Turn{
+    height: 3rem;
+    width: 20rem;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid rgb(56, 60, 18);
+    font-family: "Arial";
+    font-style: oblique;
+    font-size: xx-large;
+    justify-content:left;
+    color: #f1f1f1;  
+    background-color: #203500;
+    border-radius: 3% 0px 3% 0px;
+    -moz-border-radius: 35px 0px 35px 0px;
+    -webkit-border-radius:  0px 35px 0px 35px;
+}
+
+.tablero{
+    display: flex;
+    justify-content: center; 
+
+}
+
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    gap: 10pc;
+
+}
+
+.textos{
+    width:20%;
+    background-color:#ee04;
+    text-align: right;
+}
+
+.Contadores{
+    width: 30%;
+    background-color: #203500;
+    color: #f1f1f1;
+    text-align: center;
+    font-size: 30px;
+}
+
+.button {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #4a6629;
+    border: none;
+    border-radius: 15px;
+  }
+  
+  .button:hover {background-color: #3e8e41}
+  
+  .button:active {
+    background-color: #317033;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  .content-select{
+	max-width: 250px;
+	position: relative;
+}
+ 
+.content-select select{
+	display: inline-block;
+	width: 100%;
+	cursor: pointer;
+  	padding: 7px 10px;
+  	height: 42px;
+  	outline: 0; 
+  	border: 0;
+	border-radius: 0;
+	background: #f0f0f0;
+	color: #7b7b7b;
+	font-size: 1em;
+	color: #999;
+	font-family: 
+	'Quicksand', sans-serif;
+	border:2px solid rgba(0,0,0,0.2);
+    border-radius: 12px;
+    position: relative;
+    transition: all 0.25s ease;
+}
+ 
+.content-select select:hover{
+	background: #B1E8CD;
+}
+ 
+/* 
+Creamos la fecha que aparece a la izquierda del select.
+Realmente este elemento es un cuadrado que sólo tienen
+dos bordes con color y que giramos con transform: rotate(-45deg);
+*/
+.content-select i{
+	position: absolute;
+	right: 20px;
+	top: calc(50% - 13px);
+	width: 16px;
+	height: 16px;
+	display: block;
+	border-left:4px solid #2AC176;
+	border-bottom:4px solid #2AC176;
+	transform: rotate(-45deg); /* Giramos el cuadrado */
+	transition: all 0.25s ease;
+}
+ 
+.content-select:hover i{
+	margin-top: 3px;
+}

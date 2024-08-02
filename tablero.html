@@ -1,0 +1,94 @@
+<!--Pagina principal-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Menu principal</title>
+        <link href="CSS/disenoTablero.css" rel="stylesheet" type="text/css">
+        
+    </head>
+    <body>
+        <div class="ContainerPrincipal">
+            <div class= "Seccion">
+                <script src="./JS/index.js"></script>
+               <div class= "user">Usuario: 
+                   <select class="content-select" id="cmb1"></select>
+            <input type="radio" name="producto" id="producto_habilita1" checked="true" onclick="habilitar('cmb1')" />
+            <input type="radio" name="producto" id="producto_deshabilita1" onclick="deshabilitar('cmb1',0)" />
+        </div>
+               <div class= "stats">Estadísticas: 
+                <div class= "health"><p>Salud: <input type="text" id="Salud1" class = "textos" readonly></p></div>
+                <div class="radar"><p>Radar: <input type="text" id="radar1" class = "textos" readonly></p> </div>
+                <div class="minas"><p>Minas: <input type="text" id="minas1" class = "textos" readonly></p> </div>
+                <div class="mc"><p>Cañón: <input type="text" id="mCD1" class = "textos" readonly></p> </div>
+                <div class="mt"><p>Torreta: <input type="text" id="mTD1" class = "textos" readonly></p></div>
+                </div>
+                <div class= "instrucciones"></div>
+
+            </div>
+            <div class= "Seccion2">
+                <div class= "top">
+                    <div class= "round">
+                        Ronda:
+                        <input type="text" id = "txtRonda" value = "0" class="Contadores">
+                    </div>
+                    <div class= "Player_Turn">
+                        Tanque:
+                        <input type="text" id = "txtJugador" value = "0" class="Contadores">
+                    </div>
+                </div>
+                <div class= "tablero"> 
+                    <script src="./JS/index.js"></script>
+                    <script src="./JS/tanque.js"></script>
+                    <body onload="inicializa()">
+                        <canvas id="canvas"></canvas>
+                    </body> 
+                </div>
+                <div class= "Instrucciones">
+                    <script src="./JS/tablero.js"></script>
+                    <audio src="SOUND/main.mp3" type="audio/mp3" controls></audio >
+                    <input class="button" type="button" value=">" onclick="clic();">
+                    <input class="button" type="button" value="Automatico" onclick="automatico();">
+                    <input class="button" type="button" value="Autoterminar" onclick="rapido();">
+                </div>
+            </div>
+            <div class= "Seccion3">
+                <div class="user">Usuario: <select class="content-select" id="cmb2"></select>
+                    <input type="radio" name="producto2" id="producto_habilita2" checked="true" onclick="habilitar('cmb2')" />
+                    <input type="radio" name="producto2" id="producto_deshabilita2" onclick="deshabilitar('cmb2',1)" /></div>
+                <div class="stats">Estadísticas: 
+                    <div class= "health"><p>Salud: <input type="text" id="Salud2" class = "textos" readonly></p></div>
+                    <div class="radar"><p>Radar: <input type="text" id="radar2" class = "textos" readonly></p> </div>
+                    <div class="minas"><p>Minas: <input type="text" id="minas2" class = "textos" readonly></p> </div>
+                    <div class="mc"><p>Cañón: <input type="text" id="mCD2" class = "textos" readonly></p> </div>
+                    <div class="mt"><p>Torreta: <input type="text" id="mTD2" class = "textos" readonly></p></div>
+                </div>
+            </div>
+            <div class= "Seccion4">
+                <div class="user">Usuario: <select class="content-select" id="cmb3"></select>
+                    <input type="radio" name="producto3" id="producto_habilita3" checked="true" onclick="habilitar('cmb3')" />
+                    <input type="radio" name="producto3" id="producto_deshabilita3" onclick="deshabilitar('cmb3',2)" /></div>
+                <div class="stats">Estadísticas: 
+                    <div class= "health"><p>Salud: <input type="text" id="Salud3" class = "textos" readonly></p></div>
+                    <div class="radar"><p>Radar: <input type="text" id="radar3" class = "textos" readonly></p> </div>
+                    <div class="minas"><p>Minas: <input type="text" id="minas3" class = "textos" readonly></p> </div>
+                    <div class="mc"><p>Cañón: <input type="text" id="mCD3" class = "textos" readonly></p> </div>
+                    <div class="mt"><p>Torreta: <input type="text" id="mTD3" class = "textos" readonly></p></div>
+                </div>
+            </div>
+            <div class= "Seccion5">
+                <div class="user">Usuario: <select class="content-select" id="cmb4"></select>
+                    <input type="radio" name="producto4" id="producto_habilita4" checked="true" onclick="habilitar('cmb4')" />
+                    <input type="radio" name="producto4" id="producto_deshabilita4" onclick="deshabilitar('cmb4',3)" /></div>
+                <div class="stats">Estadísticas: 
+                    <div class= "health"><p>Salud: <input type="text" id="Salud4" class = "textos" readonly></p></div>
+                    <div class="radar"><p>Radar: <input type="text" id="radar4" class = "textos" readonly></p> </div>
+                    <div class="minas"><p>Minas: <input type="text" id="minas4" class = "textos" readonly></p> </div>
+                    <div class="mc"><p>Cañón: <input type="text" id="mCD4" class = "textos" readonly></p> </div>
+                    <div class="mt"><p>Torreta: <input type="text" id="mTD4" class = "textos" readonly></p></div>
+                </div>
+                <div class="prox">                   
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

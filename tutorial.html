@@ -1,0 +1,195 @@
+<!--Pagina principal-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tutorial</title>
+        <link href="CSS/disenoTuto.css" rel="stylesheet" type="text/css">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    </head>
+    <body class="Container1">
+        <button class="tablink" onclick="openPage('Uno', this, '#5e5c12')" id="defaultOpen">¿Cómo jugar?</button>
+        <button class="tablink" onclick="openPage('Dos', this, '#4d6517')">Botones</button>
+        <button class="tablink" onclick="openPage('Tres', this, '#9c9636')">Programación</button>
+
+        <div id="Uno" class="tabcontent">
+        <h3>¿Cómo jugar?</h3>
+        <iframe width="700" height="500" src="https://www.youtube.com/embed/AAisdLaHmZw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div id="Dos" class="tabcontent">
+            <h3>Botones</h3>
+            <!-- Container for the image gallery -->
+    <div class="container">
+    
+        <!-- Full-width images with number text -->
+        <div class="mySlides">
+          <div class="numbertext">1 / 18</div>
+            <img src="./IMAGES/norte.jpg" style="width:10%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">2 / 18</div>
+            <img src="./IMAGES/sur.jpg" style="width:10%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">3 / 18</div>
+            <img src="./IMAGES/este.jpg" style="width:10%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">4 / 18</div>
+            <img src="./IMAGES/oeste.jpg" style="width:10%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">5 / 18</div>
+            <img src="./IMAGES/tnorte.jpg" style="width:10%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">6 / 18</div>
+            <img src="./IMAGES/tsur.jpg" style="width:10%">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">7 / 18</div>
+              <img src="./IMAGES/teste.jpg" style="width:10%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">8 / 18</div>
+              <img src="./IMAGES/toeste.jpg" style="width:10%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">9 / 18</div>
+              <img src="./IMAGES/cnorte.jpg" style="width:10%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">10 / 18</div>
+              <img src="./IMAGES/csur.jpg" style="width:10%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">11 / 18</div>
+              <img src="./IMAGES/ceste.jpg" style="width:10%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">12 / 18</div>
+              <img src="./IMAGES/coeste.jpg" style="width:10%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">13 / 18</div>
+              <img src="./IMAGES/rnorte.jpg" style="width:10%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">14 / 18</div>
+              <img src="./IMAGES/rsur.jpg" style="width:10%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">15 / 18</div>
+              <img src="./IMAGES/reste.jpg" style="width:10%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">16 / 18</div>
+              <img src="./IMAGES/roeste.jpg" style="width:10%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">17 / 18</div>
+              <img src="./IMAGES/vida.png" style="width:10%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">18 / 18</div>
+              <img src="./IMAGES/mina.png" style="width:10%">
+          </div>
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+        <!-- Image text -->
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+      
+        <!-- Thumbnail images -->
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor" src="./IMAGES/norte.jpg" style="width:10%" onclick="currentSlide(1)" alt="Avanza una casilla en dirección al norte" >
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="./IMAGES/sur.jpg" style="width:10%" onclick="currentSlide(2)" alt="Avanza una casilla en dirección al sur">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="./IMAGES/este.jpg" style="width:10%" onclick="currentSlide(3)" alt="Avanza una casilla en dirección al norte este">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="./IMAGES/oeste.jpg" style="width:10%" onclick="currentSlide(4)" alt="Avanza una casilla en dirección al norte oeste">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="./IMAGES/tnorte.jpg" style="width:10%" onclick="currentSlide(5)" alt="Dispara una munición de torreta en dirección al norte">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="./IMAGES/tsur.jpg" style="width:10%" onclick="currentSlide(6)" alt="Dispara una munición de torreta en dirección al sur">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="./IMAGES/teste.jpg" style="width:10%" onclick="currentSlide(7)" alt="Dispara una munición de torreta en dirección al este">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="./IMAGES/toeste.jpg" style="width:10%" onclick="currentSlide(8)" alt="Dispara una munición de torreta en dirección al oeste">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="./IMAGES/cnorte.jpg" style="width:10%" onclick="currentSlide(9)" alt="Dispara una munición de cañón en dirección al norte">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="./IMAGES/csur.jpg" style="width:10%" onclick="currentSlide(10)" alt="Dispara una munición de cañón en dirección al sur">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="./IMAGES/ceste.jpg" style="width:10%" onclick="currentSlide(11)" alt="Dispara una munición de cañón en dirección al este">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="./IMAGES/coeste.jpg" style="width:10%" onclick="currentSlide(12)" alt="Dispara una munición de cañón en dirección al oeste">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="./IMAGES/rnorte.jpg" style="width:10%" onclick="currentSlide(13)" alt="Revisar el radar en dirección al norte">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="./IMAGES/rsur.jpg" style="width:10%" onclick="currentSlide(14)" alt="Revisar el radar en dirección al sur">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="./IMAGES/reste.jpg" style="width:10%" onclick="currentSlide(15)" alt="Revisar el radar en dirección al este">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="./IMAGES/roeste.jpg" style="width:10%" onclick="currentSlide(16)" alt="Revisar el radar en dirección al oeste">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="./IMAGES/vida.png" style="width:10%" onclick="currentSlide(17)" alt="Revisa la vida del tanque">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="./IMAGES/mina.png" style="width:10%" onclick="currentSlide(18)" alt="Deja una mina en la ubicación actual">
+          </div>
+        </div>
+      </div>
+            </div>
+
+        <div id="Tres" class="tabcontent">
+        <h3>Programación</h3>
+        <p>La programación es el proceso utilizado para idear y ordenar las acciones necesarias para realizar un proyecto.
+            En la actualidad, la noción de programación se encuentra muy asociada a la creación de aplicaciones de informática y videojuegos. 
+            En este sentido, es el proceso por el cual una persona desarrolla un programa, valiéndose de una herramienta que le permita escribir 
+            el código (el cual puede estar en uno o varios lenguajes, como C++, Java y Python, entre otros) y de otra que sea capaz de “traducirlo” 
+            a lo que se conoce como lenguaje de máquina, que puede "comprender" el microprocesador.</p>
+        <p></p>
+        <p>Para crear un programa, y que la computadora lo interprete y ejecute, las instrucciones deben escribirse en un lenguaje de programación. 
+            En sus comienzos las computadoras interpretaban solo instrucciones en un lenguaje específico, del más bajo nivel, conocido como código máquina, 
+            siendo éste excesivamente complicado para programar. De hecho solo consiste en cadenas de números 1 y 0 (sistema binario). Para facilitar el trabajo 
+            de programación, los primeros científicos, que trabajaban en el área, decidieron reemplazar las instrucciones, secuencias de unos y ceros, 
+            por mnemónicos, que son abreviaturas en inglés de la función que cumple la instrucción; las codificaron y crearon así un lenguaje de mayor nivel, 
+            que se conoce como Assembly o lenguaje ensamblador. Por ejemplo, para sumar se podría usar la letra A de la palabra inglesa add (sumar). 
+            En realidad escribir en lenguaje ensamblador es básicamente lo mismo que hacerlo en lenguaje máquina, pero las letras y palabras son bastante más 
+            fáciles de recordar y entender que secuencias de números binarios. A medida que la complejidad de las tareas que realizaban las computadoras aumentaba, 
+            se hizo necesario disponer de un método más sencillo para programar. Entonces, se crearon los lenguajes de alto nivel. Mientras que una tarea tan trivial 
+            como multiplicar dos números puede necesitar un conjunto de instrucciones en lenguaje ensamblador, en un lenguaje de alto nivel bastará con solo una. Una vez que se termina de escribir un programa, sea en ensamblador o en algunos casos, lenguajes de alto nivel, es necesario compilarlo, es decir, traducirlo completo a lenguaje máquina.
+            ​Eventualmente será necesaria otra fase denominada comúnmente link o enlace, durante la cual se anexan al código, generado durante la compilación, los recursos necesarios de alguna biblioteca. En algunos lenguajes de programación, puede no ser requerido el proceso de compilación y enlace, ya que se puede trabajar en modo intérprete. Esta modalidad de trabajo es equivalente pero se realiza instrucción por instrucción, se traduce a medida que es ejecutado el programa.</p>
+        </div>
+        </div>
+    ;<script src="JS/Tuto.js"></script>
+    </body>
+</html>

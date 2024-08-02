@@ -1,0 +1,209 @@
+<!DOCTYPE html>     
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Configuración partida</title>
+    </head>
+    <body class="body">
+        <link rel="stylesheet" href="./css/conf_part.css">
+
+    <div class= "S1"> Configurar Partida
+        <div class="block">
+            <label for="numJugadores">Numero de jugadores</label>
+            <select name="numJugadores" id="numJugadores">
+                <option value="4">4 jugadores</option>
+                <option value="3">3 jugadores</option>
+                <option value="3pc">3 jugadores y pc</option>
+                <option value="2">2 jugadores</option>
+                <option value="2pc">2 jugadores y pc</option>
+                <option value="1">1 jugadore y pc</option>
+            </select>
+            <div class="block">
+                <label for="tipoPartida">Tipo de partida</label>
+                <select name="tipoPartida" id="tipoPartida" onchange="tipoPartida()">
+                    <option value="tiempo">Tiempo de juego</option>
+                    <option value="ultimo">Último en pie</option>
+                    <option value="rondas">Por rondas</option>
+                </select>
+                <select name="tiempoJuego" id="tiempoJuego">
+                    <option value="1">1 minuto</option>
+                    <option value="3">3 minutos</option>
+                    <option value="5">5 minutos</option>
+                    <option value="10">10 minutos</option>
+                </select>
+                <select name="rondasJuego" id="rondasJuego" hidden>
+                    <option value="30">30 rondas</option>
+                    <option value="50">50 rondas</option>
+                    <option value="80">80 rondas</option>
+                    <option value="100">100 rondas</option>
+                </select>
+            </div>
+            <div class="block">
+                <label for="ptsVida">Puntos de vida</label>
+                <select name="ptsVida" id="ptsVida">
+                    <option value="100">100</option>
+                    <option value="150">150</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class= "S2"> Munición
+        <div class="block">
+            <label for="munCanon">Munición de cañón</label>
+            <select name="munCanon" id="munCanon">
+                <option value="3">0</option>
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="10">15</option>
+            </select>
+        </div>
+        <div class="block">
+            <label for="munTorreta">Munición de torreta</label>
+            <select name="munTorrera" id="munTorrera">
+                <option value="inf">Infinita</option>
+                <option value="20">20</option>
+                <option value="20">30</option>
+                <option value="20">50</option>
+                <option value="20">100</option>
+            </select>
+        </div>
+        <div class="block">
+            <label for="numMinas">Número de minas</label>
+            <select name="numMinas" id="numMinas">
+                <option value="3">0</option>
+                <option value="3">3</option>
+                <option value="5">5</option>
+            </select>
+        </div> 
+    </div>
+    <div class="S3"> Instrucciones
+        <div class="R"> Radar / Salud
+            <select name="Radar" id="Radar">
+                <option value="Radar al norte">Radar al norte</option>
+                <option value="Radar al sur">Radar al sur</option>
+                <option value="Radar al este">Radar al este</option>  
+                <option value="Radar al oeste">Radar al oeste</option>
+                <option value="Revisar salud">Revisar salud</option>
+            </select>
+            <button type="button" onClick="agregarRadar()">Agregar</button>
+        </div>
+        <div class="AD"> Acción Disparar
+            <select name="ADisparar" id="ADisp" onchange="tipoD()">
+                <option value="Disparar cañón"> Disparar cañón  </option>
+                <option value="Disparar torreta"> Disparar torreta </option>
+                <option value="Dejar mina"> Dejar mina </option>
+            </select>
+            <select name="Direccion" id="Direc">
+                <option value="Norte"> Norte </option>
+                <option value="Sur"> Sur  </option>
+                <option value="Oeste"> Oeste </option>
+                <option value="Este"> Este </option>
+            </select>
+            <select name="Cantidad" id="Cant">
+                <option value="1"> 1 </option>
+                <option value="2"> 2  </option>
+                <option value="3"> 3 </option>
+                <option value="4"> 4 </option>
+                <option value="5"> 5 </option>
+                <option value="6"> 6 </option>
+                <option value="7"> 7  </option>
+                <option value="R"> R  </option>
+            </select>
+            <button type="button" onClick="agregarDisparo()">Agregar</button>
+        </div>
+        <div class="AA"> Acción Avanzar
+            <select name="Direccion" id="AvanzarAction">
+                <option value="Norte"> Norte </option>
+                <option value="Sur"> Sur  </option>
+                <option value="Oeste"> Oeste </option>
+                <option value="Este"> Este </option>
+            </select>
+            <button type="button" onclick="agregarAvanzar()">Agregar</button>
+        </div>
+        <div class="Estruct"> Estructuras de control
+            <select name="Estructura" id="Estructura" onchange="EstructuraDeControl();">
+                <option value="Condicion">Selecciona una opción</option>
+                <option value="Condicion"> Condición </option>
+                <option value="Salto"> Salto </option>
+            </select>
+            <select name = "Opciones" id = "OpcCondi" onchange="radar2();">
+                <option value="Radar">Selecciona una opción</option>
+                <option value="Radar">Radar</option>
+                <option value="Salud">Salud</option>
+            </select>
+            <select name="DireccionR" id="rDirec2">
+                <option value="Valor">Selecciona una opción</option>
+                <option value="Valor"> Valor</option>
+                <option value="Norte"> Norte </option>
+                <option value="Sur"> Sur  </option>
+                <option value="Oeste"> Oeste </option>
+                <option value="Este"> Este </option>
+            </select>
+            <select name = "Operadores" id = "Operadores">
+                <option value="Igual">Selecciona una opción</option>
+                <option value = "Igual"> == </option>
+                <option value = "MayorIgual"> &gt;= </option>
+                <option value = "MenorIgual"> &lt;= </option>
+                <option value = "Mayor"> &gt; </option>
+                <option value = "Menor"> &lt; </option>
+                <option value = "Diferente"> != </option>
+            </select>
+            <select name="Valor" id="Valor">
+                <option value="0">Selecciona una opción</option>
+                <option value = "0">0</option>
+                <option value = "R" >R</option>
+                <option value = "20" >20</option>
+                <option value = "40" >40</option>
+                <option value = "60" >60</option>
+            </select>
+            <select name="InstruCondi" id="InstruCondi" onchange="instrC();">
+                <option value="Avanzar">Selecciona una opción</option>
+                <option value="Avanzar">Avanzar</option>
+                <option value="DispararCanon">Disparar cañón</option>
+                <option value="DispararTorreta">Disparar torreta</option>
+                <option value="DejaMina">Dejar mina</option>
+                <option value="Saltar">Salto</option>
+            </select>
+            <select name="Direccion" id="Direc3">
+                <option value="Norte">Selecciona una opción</option>
+                <option value="Norte"> Norte </option>
+                <option value="Sur"> Sur  </option>
+                <option value="Oeste"> Oeste </option>
+                <option value="Este"> Este </option>
+            </select>
+            <select name="Cantidad" id="Cant2">
+                <option value="1">Selecciona una opción</option>
+                <option value="1"> 1 </option>
+                <option value="2"> 2  </option>
+                <option value="3"> 3 </option>
+                <option value="4"> 4 </option>
+                <option value="5"> 5 </option>
+                <option value="6"> 6 </option>
+                <option value="7"> 7  </option>
+                <option value="R"> R  </option>
+            </select>
+            <select name="Magnitud" id="numInstru">
+            </select>
+            <select name="Magnitud2" id="numInstru2">
+            </select>
+            <button type="button" onclick="agregarControl()">Agregar</button>
+        </div>
+        <div id="instructions" class="box">
+            <h4>Caja de instructiones</h4>
+            <input type="text" id = "txtListo">
+            <button type="button" onclick="deleteComponente()">Elimina</button>
+            <button type="button" onclick="listo()">Listo</button>
+            <div class="instructionsBox">
+                <div id="instru" class="action_box"></div>                                   
+            </div>
+        </div>
+    </div>
+    <div class="S4">
+        <input type="button" value="Regresar"  onclick="location.href='index.html';">
+        <input type="button" value="Continuar" onclick="location.href='tablero.html';">
+    </div>
+    <script src="./js/conf_part.js"></script>
+    </body>
+</html>
